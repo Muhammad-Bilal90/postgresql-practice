@@ -15,7 +15,7 @@ export default async function Home() {
       <h1 className="font-bold text-3xl">Welcome From Vercel Postgres</h1>
       <div className="pt-16">
         {users.map((item: any, index: number) => (
-          <div className="py-4">
+          <div key={index} className="py-4">
             <h1 className="font-semibold text-xl">{item.name}</h1>
             <h3 className="font-medium text-lg">{item.email}</h3>
           </div>
